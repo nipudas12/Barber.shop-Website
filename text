@@ -1,0 +1,171 @@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Team Section */
+
+.team{
+    background: #009688ac;
+}
+.team .title{
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.team .title::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background: #111;
+    height: 3px;
+    width: 100px;
+    transform: translateX(-50%);
+}
+
+.team .title::after {
+    content: 'our staff';
+    position: absolute;
+    left: 50%;
+    bottom: -9px;
+    font-size: 13px;
+    color: #111;
+    background: #009688;
+    padding: 2px 5px;
+    transform: translateX(-50%);
+}
+.team .team-content{
+    padding-left: 200px;
+}
+.team .team-content .card{
+    margin: 10px 0 5px;
+    border-radius: 6px;
+    text-align: center;
+    background: #009688bc;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+.team .team-content .card:hover{
+    background: #009688;
+}
+.team .card:hover .box{
+    transform: scale(1.05);
+} 
+.team .team-content .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: .4s ease-in-out;
+}
+.team .team-content .box h2{
+    font-size: 25px;
+    font-weight: 700px;
+    margin-top: 5px;
+}
+.team .team-content .box img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 5px solid #009688;
+    object-fit: cover;
+    transition: .2s ease-in-out;
+}
+.team .box:hover img{
+    border: 5px solid rgba(0,0,0,0.2);
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 10px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    border: 2px solid #009688 !important;
+    border-radius: 50%;
+    outline: none !important;
+    margin: 0 5px;
+}
+.owl-dot.active{
+    width: 75px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: #009688 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*<section class="team" id="team">
+    <div class="title">Team</div>
+    <div class="team-content"></div>
+    <div class="slide owl-carousel">
+        <div class="card">
+            <div class="box">
+                <img src="haircut.jpeg" alt="">
+                <h2>Facial</h2>
+                <p> A great hairstyle is the best accessory.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <img src="./haircut.jpeg" alt="">
+                <h2>Facial</h2>
+                <p> A great hairstyle is the best accessory.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <img src="./haircut.jpeg" alt="">
+                <h2>Facial</h2>
+                <p> A great hairstyle is the best accessory.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <img src="./haircut.jpeg" alt="">
+                <h2>Facial</h2>
+                <p> A great hairstyle is the best accessory.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <img src="./haircut.jpeg" alt="">
+                <h2>Facial</h2>
+                <p> A great hairstyle is the best accessory.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <img src="./haircut.jpeg" alt="">
+                <h2>Facial</h2>
+                <p> A great hairstyle is the best accessory.</p>
+            </div>
+        </div>
+    </div>
+</section>*/
